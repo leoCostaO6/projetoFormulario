@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>página inicial</title>
+    <link rel="stylesheet" href="/assets/css/index.css">
+</head>
+<body>
+    <h1 id="tituloPrincipal">Bem vindo!!!</h1>
+    
+    <div class="geral">
+        <label id="labelNome" for="id_nome">Digite seu nome👉</label>
+        <input type="text" name="nome" id="id_nome">
+<br>      
+        <a href="/pages/form.html">
+            <button onclick="salvarNome()" id="IdBotao">OK!!!</button>
+        </a>
+    </div>
+    <script>
+        function salvarNome(){
+            var nome = document.getElementById("id_nome").value;
+            localStorage.setItem('nome', nome);
+            window.alert("nome salvo.")
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,15 @@
+.geral{
+    display: flex;
+    flex-direction: column;
+    line-height: 2;
+}
+
+#coisas{
+    display: flex;
+    align-items: center;
+    
+}
+
+#btDeletar{
+    margin-left: 12px;
+}
